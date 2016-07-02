@@ -19,21 +19,10 @@ trigger_map:
   workflow: build
 workflows:
   build:
-    description: |-
-      You can use this workflow by running: bitrise run test
-      Or by triggering: bitrise trigger test
-      If you use trigger, you can trigger it with any pattern
-        which starts with 'test', like: bitrise trigger test-1
-        or: bitrise trigger test/1
-      You can define the mapping between trigger patterns and
-        workflows in the 'trigger_map' section.
     steps:
     - git-clone@3.2.0: {}
     - git::https://github.com/HBehrens/bitrise-step-pebble-build.git@master:
         title: Pebble build
         inputs:
         - sdk_without_emulator: 'yes'
-        - sdk_without_freetype: 'yes'
-        - sdk_without_node: 'yes'
-        - sdk_accept_legalese: 'yes'
 ```
