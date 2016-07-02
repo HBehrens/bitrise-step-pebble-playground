@@ -1,3 +1,5 @@
+[![Build Status](https://www.bitrise.io/app/c74bf2e2706c9cbb.svg?token=vWNpdgCmMqjajdHkjlokMQ&branch=master)](https://www.bitrise.io/app/c74bf2e2706c9cbb)
+
 Sample project to test the CI-service [Bitrise](https://www.bitrise.io) with the
 [Pebble build step](https://github.com/HBehrens/bitrise-step-pebble-build]).
 
