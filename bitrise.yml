@@ -23,10 +23,12 @@ workflows:
       You can define the mapping between trigger patterns and
         workflows in the 'trigger_map' section.
     steps:
-      - git::git@github.com:HBehrens/bitrise-step-pebble-build.git@master:
-#      - path::../bitrise-step-pebble-build:
+#      - git::https://github.com/HBehrens/bitrise-step-pebble-build.git@master:
+      - path::../bitrise-step-pebble-build:
           title: "Pebble build"
 #          inputs:
+#            - sdk_accept_legalese: 'yes'
 #            - sdk_without_emulator: 'yes'
 #            - sdk_without_freetype: 'yes'
 #            - sdk_without_node: 'yes'
+#            - sdk_analytics_enabled: 'no'
